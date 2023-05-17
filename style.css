@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+}
+
+.main {
+    width: 100vw;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 40px;
+    min-width: 300px;
+}
+
+.img img {
+    margin: 0 auto;
+    width: 300px;
+    height: 238px;
+}
+
+.info {
+    width: 286px;
+    margin: 0 auto;
+    color: #333333;
+
+}
+
+.info .description {
+    width: 238px;
+    height: 100px;
+    color: #4F4F4F;
+    line-height: 27px;
+    margin-top: 15px;
+}
+
+.info h1 {
+    font-size: 35px;
+    line-height: 60px;
+}
+
+#back {
+    width: 150px;
+    height: 50px;
+    margin: 40px 0;
+    font-size: 12px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+footer {
+    width: 280px;
+    margin: 20px auto;
+    color: #989898;
+}
+
+footer a {
+    color: #989898;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para pantalla mayor a 600px */
+@media screen and (min-width: 600px){
+
+    .main {
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .container {
+        width: 540px;
+        height: 450px;
+        display: flex;
+        align-items: center;
+    }
+
+    .info h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* Estilos para pantalla mayor a 900px */
+@media screen and (min-width: 900px){
+    
+    .container {
+        width: 850px;
+        justify-content: space-between;
+    }
+
+    .img img{
+        width: 400px;
+        height: 352px;
+    }
+
+    .info {
+        width: 425px;
+    }
+
+    .info h1{
+        font-size: 35px;
+    }
+}
